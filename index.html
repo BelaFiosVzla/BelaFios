@@ -103,10 +103,10 @@ nav{position:sticky;top:0;z-index:100;background:rgba(253,252,249,.97);backdrop-
 .hero-proof{display:flex;gap:0;padding-top:2.5rem;border-top:.5px solid rgba(28,43,26,.15);flex-wrap:wrap;margin-top:auto}
 .proof-num{font-family:var(--serif);font-size:clamp(36px,3.5vw,52px);font-weight:400;color:var(--forest);line-height:1;letter-spacing:-.02em}
 .proof-lbl{font-size:12px;color:var(--muted);margin-top:4px;letter-spacing:.04em;max-width:100px;line-height:1.3}
-.hero-right{position:relative;overflow:hidden;background:var(--forest);display:flex;align-items:center;justify-content:center;min-height:100%}
+.hero-right{position:relative;overflow:hidden;background:var(--forest);display:flex;align-items:center;justify-content:center;min-height:100%;padding:2rem}
 
 .hero-badge{text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;z-index:2;padding:2rem}
-.hero-badge-logo{height:auto;width:72%;max-width:320px;opacity:1;display:block;margin:0 auto 2.5rem;filter:brightness(0) invert(1)}
+.hero-badge-logo{height:auto;width:72%;max-width:300px;max-height:180px;object-fit:contain;opacity:1;display:block;margin:0 auto 2.5rem;filter:brightness(0) invert(1)}
 .hero-badge-txt{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(240,232,216,.65);margin-top:0;white-space:nowrap}
 
 /* STRIP */
@@ -230,8 +230,8 @@ select.fi{appearance:none;cursor:pointer}
 .blog-card-body{padding:1.25rem 1.5rem 1.5rem}
 .blog-card-tag{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--sage);margin-bottom:.5rem}
 .blog-card-excerpt{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:1.25rem}
-.blog-full{display:none;background:var(--ivory);border:.5px solid var(--border);padding:2.5rem;margin-top:1.5rem}
-.blog-full.open{display:block}
+.blog-full{max-height:0;overflow:hidden;background:var(--ivory);border:.5px solid var(--border);padding:0 2.5rem;margin-top:1.5rem;transition:max-height .4s ease,padding .3s ease}
+.blog-full.open{max-height:9999px;padding:2.5rem;display:block}
 .blog-full-title{font-family:var(--serif);font-size:clamp(22px,2.5vw,32px);color:var(--forest);margin-bottom:1rem;line-height:1.15;font-weight:400}
 .blog-full-meta{font-size:11px;color:var(--light);margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:.5px solid var(--border)}
 .blog-full-body p{font-size:14px;color:var(--muted);line-height:1.9;margin-bottom:1rem}
@@ -242,7 +242,7 @@ select.fi{appearance:none;cursor:pointer}
 .blog-ctas{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.75rem;padding-top:1.5rem;border-top:.5px solid var(--border)}
 .close-btn{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);background:none;border:.5px solid var(--border);padding:8px 16px;cursor:pointer;font-family:var(--sans);transition:all .2s}
 .close-btn:hover{color:var(--forest);border-color:var(--forest)}
-@media(max-width:900px){.blog-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.blog-grid{grid-template-columns:1fr 1fr.hero-badge-logo{width:60%;max-width:180px;margin-bottom:1.5rem}.hero-badge{padding:1.5rem}}}
 @media(max-width:550px){.blog-grid{grid-template-columns:1fr}}
 
 
@@ -256,7 +256,7 @@ select.fi{appearance:none;cursor:pointer}
 
 .pc{cursor:pointer;transition:transform .2s,box-shadow .2s}
 .pc:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(28,43,26,.12)}
-.pc-full{display:none;background:var(--cream);border:.5px solid var(--border);padding:2.5rem;margin-top:1.5rem}
+.pc-full{max-height:0;overflow:hidden;background:var(--cream);border:.5px solid var(--border);padding:0 2.5rem;margin-top:1.5rem;transition:max-height .4s ease,padding .3s ease}
 .pc-full.open{display:block}
 .pc-full-title{font-family:var(--serif);font-size:clamp(22px,2.5vw,32px);color:var(--forest);margin-bottom:1.25rem;font-weight:400}
 .pc-full-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:1.5rem 0}
@@ -473,6 +473,650 @@ footer{background:var(--forest);padding:3.5rem 2.5rem 2rem;display:grid;grid-tem
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADN0lEQVR4nO2WS0ycVRTHz7n3+2YGCyVCwmPKRKYYwqAGrSLQjm1TKBRiAFfGvTG6EXRpN0qoMZGQuDMRFq0mbUJaIdZoC007DEzHIULaYCBCCwpjRN7PhvnmnuMCJhpjwv0ChtRwtvdxfvd/Xhefqylk2EcT++n8AOAA4PEHEChotwCG7kZEZNx2iAgMAKCUMhIQDIzMjHYBtBVgZiRSkkhJpZRhSNMqfPqZEWISxCSYGYWQyi7AjgogIjMzujPc0YI83zTzVuNMOZRivVxUAoM/DQaHf76fOTE1kWvFLUdi/54BJF62vLqcWpDnG3v7jXdOAwAEfrgTGf91fOPDdz86DQDwS3Rysr2jbbqz+2u/QEHEpKWudgjWH60n9/TfdCul4gAAX3ZedHiyPc5rN68GA5HAwFNHcnObGpv9J4tPDRCT0A2HrSpwOZNiUkpjfml+9tUztWuV/qqyYKTXcaP3uxgxETFR5StVmwB/JeoeA7isucW5P+6Eb4+eO1l9bHZhdqbvx2CRw3QQAqJAIeIqbmu66gFsJ9XC0kLKt7evj5S9UOZ1OV1PvHehYXYztukqeb5UIiICANzo/f7Q1hHQSkTtPgAAELNiRr43P8WdeSTnfOsH/StrK+6mxua+6lM1/sXlhfmWtk9H7w6FTgghFZGSOnfaCkFRQVE0N8ebFRzoHfjmVtcJy7KMW6FuZ0+oJ/xkalr6m6+/lV1/9rU+IiV1u6QtgIdTD9KSXEmu0FBoQ0oZj85MewKRQPH7FxpKe/q7w94c79Gmxmb/i8++dE+3EmwBRGd+y1zfWFv35fm2uqFhWKZhxhCR2zu+SCVSipm5rqJ+FUCvErQAiEkIFLS0spj2yecf/15bXuevOF4RjsfjZqLhLK0sJysixUx0OPmwCaCXiNoKJCQNRALFX3VdCrSe/6y0IM83SkSSmbH8ePlD0zAdQkg5PDb8CEBPAVtVwNtKtLS1+DPTs8KebA+MPhhBd4Y7etZfmT45PTERnYnOX7l++RgiMhHtWAm4F99yh+nYVKRkQg07Z20pkLB/TryYFXP+fQ1ga4j9ZwD/drldx7sC0IXSscf7U3oA8L8A+BNBV4yB04XKiAAAAABJRU5ErkJggg==">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+<script type="application/ld+json">
+[
+  {"@context":"https://schema.org","@type":"Article","headline":"Por qué el alisado orgánico es la mejor opción para el cabello en Maracaibo","description":"El alisado orgánico sin formol es la mejor opción para el cabello en Maracaibo por el clima, la humedad del lago y la salud capilar.","keywords":"Alisado orgánico Maracaibo","author":{"@type":"Organization","name":"BelaFios — Centro de Bienestar Capilar"},"publisher":{"@type":"Organization","name":"BelaFios","url":"https://belafios.com"},"mainEntityOfPage":"https://belafios.com/#blog","datePublished":"2026-04-15","dateModified":"2026-05-08","inLanguage":"es-VE"},
+  {"@context":"https://schema.org","@type":"Article","headline":"Cómo hidratar correctamente el cabello crespo en Maracaibo","description":"Guía completa para hidratar el cabello crespo en el clima de Maracaibo, con sus condiciones de humedad y calor particulares.","keywords":"Hidratación cabello crespo Maracaibo","author":{"@type":"Organization","name":"BelaFios — Centro de Bienestar Capilar"},"publisher":{"@type":"Organization","name":"BelaFios","url":"https://belafios.com"},"mainEntityOfPage":"https://belafios.com/#blog","datePublished":"2026-04-15","dateModified":"2026-05-08","inLanguage":"es-VE"},
+  {"@context":"https://schema.org","@type":"Article","headline":"Por qué el cabello en Maracaibo sufre más que en otras ciudades","description":"El lago, el calor extremo y la humedad de Maracaibo afectan el cabello de forma única. Conoce por qué y cómo protegerlo.","keywords":"Por qué sufre el cabello en Maracaibo","author":{"@type":"Organization","name":"BelaFios — Centro de Bienestar Capilar"},"publisher":{"@type":"Organization","name":"BelaFios","url":"https://belafios.com"},"mainEntityOfPage":"https://belafios.com/#blog","datePublished":"2026-04-15","dateModified":"2026-05-08","inLanguage":"es-VE"},
+  {"@context":"https://schema.org","@type":"Article","headline":"Cómo usar correctamente la mascarilla capilar en la ducha","description":"La mayoría usa la mascarilla capilar incorrectamente. Aquí el protocolo correcto para máxima hidratación y reparación.","keywords":"Cómo usar mascarilla para el pelo","author":{"@type":"Organization","name":"BelaFios — Centro de Bienestar Capilar"},"publisher":{"@type":"Organization","name":"BelaFios","url":"https://belafios.com"},"mainEntityOfPage":"https://belafios.com/#blog","datePublished":"2026-04-15","dateModified":"2026-05-08","inLanguage":"es-VE"},
+  {"@context":"https://schema.org","@type":"Article","headline":"Beneficios del alisado de Cacao y Acaí para el cabello en Maracaibo","description":"El alisado de Cacao y la Plástica de Acaí son los más efectivos para el cabello venezolano. Descubre sus diferencias y beneficios.","keywords":"Beneficios alisado Cacao y Acaí Maracaibo","author":{"@type":"Organization","name":"BelaFios — Centro de Bienestar Capilar"},"publisher":{"@type":"Organization","name":"BelaFios","url":"https://belafios.com"},"mainEntityOfPage":"https://belafios.com/#blog","datePublished":"2026-04-15","dateModified":"2026-05-08","inLanguage":"es-VE"},
+  {"@context":"https://schema.org","@type":"Article","headline":"Por qué necesitas un termoprotector capilar en Maracaibo","description":"El calor de la plancha combinado con el clima de Maracaibo daña el cabello silenciosamente. El termoprotector es indispensable.","keywords":"Termoprotector capilar Maracaibo","author":{"@type":"Organization","name":"BelaFios — Centro de Bienestar Capilar"},"publisher":{"@type":"Organization","name":"BelaFios","url":"https://belafios.com"},"mainEntityOfPage":"https://belafios.com/#blog","datePublished":"2026-04-15","dateModified":"2026-05-08","inLanguage":"es-VE"},
+  {"@context":"https://schema.org","@type":"Article","headline":"Óleo de argán para el cabello: qué es y por qué el cabello venezolano lo necesita","description":"El óleo de argán penetra la hebra y repone los lípidos perdidos por el sol, el lago y los químicos. Guía para el cabello venezolano.","keywords":"Óleo de argán para el cabello Venezuela","author":{"@type":"Organization","name":"BelaFios — Centro de Bienestar Capilar"},"publisher":{"@type":"Organization","name":"BelaFios","url":"https://belafios.com"},"mainEntityOfPage":"https://belafios.com/#blog","datePublished":"2026-04-15","dateModified":"2026-05-08","inLanguage":"es-VE"},
+  {"@context":"https://schema.org","@type":"Article","headline":"Aceite de coco para el cabello en Venezuela: beneficios reales y cómo usarlo","description":"El aceite de coco es el producto más popular en Venezuela pero también el más mal usado. Aprende el protocolo correcto.","keywords":"Aceite de coco para el cabello Venezuela","author":{"@type":"Organization","name":"BelaFios — Centro de Bienestar Capilar"},"publisher":{"@type":"Organization","name":"BelaFios","url":"https://belafios.com"},"mainEntityOfPage":"https://belafios.com/#blog","datePublished":"2026-04-15","dateModified":"2026-05-08","inLanguage":"es-VE"}
+]
+</script>
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Kit Purify Anticaída — Amazónica Beleza",
+    "description": "Kit capilar anticaída y antioleosidad con Mirra y extracto de Rosas. Shampoo, acondicionador y mascarilla. Disponible en BelaFios Maracaibo, C.C. Terraza 77.",
+    "keywords": "kit purify anticaida maracaibo, shampoo anticaida venezuela, productos capilares maracaibo",
+    "brand": {"@type": "Brand", "name": "Amazónica Beleza"},
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "seller": {"@type": "LocalBusiness", "name": "BelaFios", "address": "C.C. Terraza 77, Piso 2, Local 28, Maracaibo, Venezuela"},
+      "url": "https://wa.me/584146888360?text=Hola%2C%20quiero%20pedir%20el%20Kit%20Purify%20(anticaída)"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Kit Platinum Look — Amazónica Beleza",
+    "description": "Kit matizador para rubias, mechadas y canas con tecnología PLEX. Neutraliza tonos amarillentos. Disponible en BelaFios Maracaibo.",
+    "keywords": "kit platinum look venezuela, shampoo matizador maracaibo, productos para canas venezuela",
+    "brand": {"@type": "Brand", "name": "Amazónica Beleza"},
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "seller": {"@type": "LocalBusiness", "name": "BelaFios", "address": "C.C. Terraza 77, Piso 2, Local 28, Maracaibo, Venezuela"},
+      "url": "https://wa.me/584146888360?text=Hola%2C%20quiero%20pedir%20el%20Kit%20Platinum%20Look%20(rubias%20y%20canas)"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Argan Boom Kit Hidratación — Amazónica Beleza",
+    "description": "Kit hidratación y reparación capilar con óleo de argán y vitamina E. Shampoo, acondicionador y mascarilla. Disponible en BelaFios Maracaibo.",
+    "keywords": "argan boom maracaibo, kit hidratacion capilar venezuela, productos argan venezuela",
+    "brand": {"@type": "Brand", "name": "Amazónica Beleza"},
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "seller": {"@type": "LocalBusiness", "name": "BelaFios", "address": "C.C. Terraza 77, Piso 2, Local 28, Maracaibo, Venezuela"},
+      "url": "https://wa.me/584146888360?text=Hola%2C%20quiero%20pedir%20el%20kit%20Argan%20Boom%20(hidratación)"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Coconut Oil Hair Repair — Amazónica Beleza",
+    "description": "Óleo de coco hair repair 60ml. Rico en Omega 3 y 6. Repara, hidrata y sella la cutícula. Uso nocturno. Disponible en BelaFios Maracaibo.",
+    "keywords": "aceite de coco para cabello maracaibo, coconut oil hair repair venezuela, oleo coco capilar",
+    "brand": {"@type": "Brand", "name": "Amazónica Beleza"},
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "seller": {"@type": "LocalBusiness", "name": "BelaFios", "address": "C.C. Terraza 77, Piso 2, Local 28, Maracaibo, Venezuela"},
+      "url": "https://wa.me/584146888360?text=Hola%2C%20quiero%20pedir%20el%20Coconut%20Oil%20Hair%20Repair"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Tónico Rosemary Capilar — Amazónica Beleza",
+    "description": "Tónico capilar con Miel de Romero 150ml. Fortalece el folículo, controla la oleosidad y activa el crecimiento. Disponible en BelaFios Maracaibo.",
+    "keywords": "tonico rosemary capilar maracaibo, tonico anticaida venezuela, rosemary capilar",
+    "brand": {"@type": "Brand", "name": "Amazónica Beleza"},
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "seller": {"@type": "LocalBusiness", "name": "BelaFios", "address": "C.C. Terraza 77, Piso 2, Local 28, Maracaibo, Venezuela"},
+      "url": "https://wa.me/584146888360?text=Hola%2C%20quiero%20pedir%20el%20T%C3%B3nico%20Rosemary"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Jolly Kids — Línea Capilar Vegana para Niñas",
+    "description": "Línea capilar vegana para niñas y bebés. Shampoo, acondicionador, mascarilla y crema de peinar sin químicos agresivos. Disponible en BelaFios Maracaibo.",
+    "keywords": "productos capilares niñas maracaibo, shampoo niñas venezuela, jolly kids vegano",
+    "brand": {"@type": "Brand", "name": "Amazónica Beleza"},
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "seller": {"@type": "LocalBusiness", "name": "BelaFios", "address": "C.C. Terraza 77, Piso 2, Local 28, Maracaibo, Venezuela"},
+      "url": "https://wa.me/584146888360?text=Hola%2C%20quiero%20pedir%20Jolly%20Kids%20(l%C3%ADnea%20para%20ni%C3%B1as)"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Blindagem BB Cream Termoprotector — Amazónica Beleza",
+    "description": "Termoprotector capilar en crema 250ml. Protege de plancha, calor, sal y cloro. Cacao Blanco, Lino y Macadamia. Disponible en BelaFios Maracaibo.",
+    "keywords": "termoprotector capilar maracaibo, blindagem bb cream venezuela, protector calor cabello",
+    "brand": {"@type": "Brand", "name": "Amazónica Beleza"},
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "seller": {"@type": "LocalBusiness", "name": "BelaFios", "address": "C.C. Terraza 77, Piso 2, Local 28, Maracaibo, Venezuela"},
+      "url": "https://wa.me/584146888360?text=Hola%2C%20quiero%20pedir%20el%20Blindagem%20BB%20Cream%20(termoprotector)"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Óleo de Argán Hair Hydration — Amazónica Beleza",
+    "description": "Óleo de argán puro 60ml para hidratación y brillo capilar. Sella la cutícula sin dejar grasa. Disponible en BelaFios Maracaibo.",
+    "keywords": "oleo argan maracaibo, aceite argan cabello venezuela, argan oil capilar maracaibo",
+    "brand": {"@type": "Brand", "name": "Amazónica Beleza"},
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "seller": {"@type": "LocalBusiness", "name": "BelaFios", "address": "C.C. Terraza 77, Piso 2, Local 28, Maracaibo, Venezuela"},
+      "url": "https://wa.me/584146888360?text=Hola%2C%20quiero%20pedir%20el%20%C3%93leo%20de%20Arg%C3%A1n"
+    },
+    "inLanguage": "es-VE"
+  }
+]
+</script>
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Detox Capilar Maracaibo",
+    "description": "Terapia de limpieza profunda del cuero cabelludo con tecnología NANOFIX y algas marinas. Ideal para cabello con residuos de sal, cloro y productos acumulados. BelaFios, C.C. Terraza 77, Maracaibo.",
+    "keywords": "detox capilar maracaibo, limpieza profunda cuero cabelludo venezuela, terapia capilar maracaibo",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Terapia Anticaída PURIFY Maracaibo",
+    "description": "Tratamiento anticaída capilar con Mirra y extracto de Rosas. Estimula el crecimiento y controla la caída difusa. Disponible en BelaFios Maracaibo.",
+    "keywords": "tratamiento anticaida maracaibo, terapia anticaida venezuela, caida cabello maracaibo",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Reparación Hair Repair Maracaibo",
+    "description": "Terapia de reparación capilar para cabello dañado por playa, piscina, sol, calor y procesos químicos. Biotecnología brasilera. BelaFios Maracaibo.",
+    "keywords": "reparacion capilar maracaibo, tratamiento cabello dañado venezuela, hair repair maracaibo",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Nutrición e Hidratación Capilar Maracaibo",
+    "description": "Terapia de nutrición e hidratación capilar profunda. Repone lípidos y nutrientes perdidos por el sol y la humedad del lago de Maracaibo.",
+    "keywords": "hidratacion capilar maracaibo, nutricion capilar venezuela, tratamiento hidratante maracaibo",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Botox Capilar Maracaibo — Baño de Río",
+    "description": "Botox capilar sin formol con Macadamia y Chía. Elimina frizz, suaviza la onda y aporta brillo intenso. Dura 8-12 semanas. BelaFios, C.C. Terraza 77, Maracaibo.",
+    "keywords": "botox capilar maracaibo, botox capilar sin formol venezuela, baño de rio maracaibo",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Ozonoterapia Capilar Maracaibo",
+    "description": "Terapia capilar con ozono medicinal. Oxigena el cuero cabelludo, activa el folículo y potencia la absorción de tratamientos. BelaFios Maracaibo.",
+    "keywords": "ozonoterapia capilar maracaibo, ozono capilar venezuela, terapia capilar avanzada maracaibo",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Terapia Básica Argán Boom Maracaibo",
+    "description": "Terapia de entrada con Argán Boom. Brillo, hidratación y salud capilar en una sesión. Primera visita ideal en BelaFios, Centro de Bienestar Capilar Maracaibo.",
+    "keywords": "terapia argan maracaibo, bienestar capilar maracaibo, tratamiento capilar primera visita",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Plástica de Acaí Maracaibo — Alisado sin Formol",
+    "description": "Alisado orgánico sin formol con Acaí amazónico y Arginina. Duración 6 meses. Para todo tipo de cabello incluyendo crespos y afros. BelaFios Maracaibo.",
+    "keywords": "plastica acai maracaibo, alisado sin formol maracaibo, alisado organico venezuela",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Alisado de Cacao Maracaibo",
+    "description": "Alisado capilar de alta gama con Cacao y Óleo de Coco. Sin formol. Para cabello decolorado o maltratado. Duración 3-6 meses. BelaFios Maracaibo.",
+    "keywords": "alisado cacao maracaibo, alisado capilar venezuela, alisado cabello maltratado maracaibo",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Alisado Natural Pure Maracaibo — Para Embarazadas",
+    "description": "Alisado orgánico hipoalergénico sin formol ni vapor. Certificado para embarazadas, lactantes y niñas. BelaFios, Centro de Bienestar Capilar Maracaibo.",
+    "keywords": "alisado embarazadas maracaibo, alisado organico sin formol venezuela, alisado seguro embarazo",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Reposición de Aminoácidos Capilar Maracaibo",
+    "description": "Tratamiento que repone aminoácidos esenciales sin alisar. Elimina el frizz y devuelve elasticidad. Ideal para quienes quieren cabello natural. BelaFios Maracaibo.",
+    "keywords": "reposicion aminoacidos cabello maracaibo, tratamiento frizz venezuela, aminoacidos capilar",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Alisado Capilar para Hombre Maracaibo",
+    "description": "Alisado capilar masculino con resultado natural. Tiempos reducidos, sin que se vea intervenido. BelaFios, Centro de Bienestar Capilar Maracaibo.",
+    "keywords": "alisado hombre maracaibo, alisado masculino venezuela, tratamiento capilar hombre maracaibo",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Alisado Pollina y Cintillo Maracaibo",
+    "description": "Alisado de secciones específicas — pollina y cintillo. Mantenimiento entre sesiones completas. Disponible en todas las fórmulas. BelaFios Maracaibo.",
+    "keywords": "alisado pollina maracaibo, alisado cintillo venezuela, alisado secciones maracaibo",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Alisado para Embarazadas y Lactantes Maracaibo",
+    "description": "Alisado Natural Pure certificado para mamás embarazadas y en lactancia. Sin formol, sin olor, sin vapor. 100% seguro. BelaFios Maracaibo.",
+    "keywords": "alisado embarazadas maracaibo, alisado lactancia venezuela, alisado seguro bebe maracaibo",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Jolly Kids — Alisado para Niñas Maracaibo",
+    "description": "Alisado orgánico para niñas con fórmula infantil sin formol ni químicos agresivos. Línea vegana Jolly Kids. BelaFios Maracaibo.",
+    "keywords": "alisado niñas maracaibo, alisado infantil venezuela, producto capilar niñas maracaibo",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Kit Platinum Look en Centro BelaFios Maracaibo",
+    "description": "Servicio de matización y alisado para rubias, mechadas y canas con tecnología PLEX. Neutraliza amarillo y aporta brillo. BelaFios Maracaibo.",
+    "keywords": "matizacion cabello maracaibo, tratamiento rubias venezuela, platinum look maracaibo",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Paquetes Anticaída Maracaibo — 4, 8 y 12 Sesiones",
+    "description": "Programas anticaída de 4, 8 o 12 sesiones en BelaFios Maracaibo. Mayor paquete, mayor resultado y menor costo por sesión.",
+    "keywords": "paquete anticaida maracaibo, tratamiento caida cabello venezuela, programa anticaida maracaibo",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Diagnóstico Capilar Gratuito Maracaibo",
+    "description": "Diagnóstico capilar profesional completamente gratuito en BelaFios, Maracaibo. Sin compromiso. Análisis personalizado del cabello y recomendación de tratamiento.",
+    "keywords": "diagnostico capilar gratis maracaibo, diagnostico cabello venezuela, consulta capilar gratuita maracaibo",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BelaFios — Centro de Bienestar Capilar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C.C. Terraza 77, Piso 2, Local 28",
+        "addressLocality": "Maracaibo",
+        "addressRegion": "Zulia",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-414-6888360",
+      "url": "https://belafios.com"
+    },
+    "areaServed": {"@type": "City", "name": "Maracaibo"},
+    "serviceType": "Servicio capilar profesional",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar"
+    },
+    "inLanguage": "es-VE"
+  }
+]
+</script>
 </head>
 <body>
 <a href="#transformaciones" class="skip-link" style="position:absolute;top:-40px;left:0;background:var(--forest);color:var(--champagne);padding:8px 16px;z-index:9999;font-size:13px;transition:top .2s" onfocus="this.style.top='0'" onblur="this.style.top='-40px'">Saltar al contenido principal</a>
