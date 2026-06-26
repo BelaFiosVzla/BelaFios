@@ -22,7 +22,17 @@
 <meta name="description" content="BelaFios Maracaibo — alisado capilar orgánico, botox capilar y terapias de restauración con biotecnología brasilera. C.C. Terraza 77. ¡Diagnóstico GRATIS! Respaldados por Amazónica Beleza.">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNWHE8ZGH5"></script>
-<script>window.dataLayer=window.dataLayer ||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ZNWHE8ZGH5');document.addEventListener('click',function(e){var wa=e.target.closest('a[href*="wa.me"]');if(wa){gtag('event','whatsapp_click',{event_category: 'contacto',event_label: wa.textContent.trim().substring(0,40)});}});</script>
+<script>window.dataLayer=window.dataLayer ||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ZNWHE8ZGH5');document.addEventListener('click',function(e){var wa=e.target.closest('a[href*="wa.me"]');if(wa){gtag('event','whatsapp_click',{event_category: 'contacto',event_label: wa.textContent.trim().substring(0,40)});}});
+function toggleFaq(el){
+  // el is the .faq-full-q clicked element
+  el.classList.toggle('open');
+  var answer = el.nextElementSibling;
+  if(answer && answer.classList.contains('faq-full-a')){
+    answer.classList.toggle('open');
+  }
+}
+function toggleFaq2(el){var ans=el.nextElementSibling;if(ans){ans.classList.toggle('open');el.classList.toggle('open');}}
+</script>
 <!-- Google Search Console verificación -->
 <meta name="google-site-verification" content="G-ZNWHE8ZGH5">
 <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -508,7 +518,7 @@ src="https://www.facebook.com/tr?id=5393646407527824&ev=PageView&noscript=1"
         <div class="sc-text">El ozono medicinal oxigena el cuero cabelludo, activa la circulación del folículo y abre la cutícula para que los activos del tratamiento siguiente penetren donde deben. Sola es efectiva. Como complemento de cualquier terapia, multiplica el resultado. Las que lo prueban no hacen un tratamiento sin él.</div>
         <div class="sc-ingr">Ozono medicinal · Activa circulación · Complemento de cualquier terapia</div>
         <div style="margin-top:.5rem;font-size:12px;color:var(--forest);line-height:1.6"><strong style="color:var(--amazon);font-size:11px;letter-spacing:.08em;text-transform:uppercase">¿Qué es?</strong><br>Aplicación de ozono medicinal que oxigena el cuero cabelludo, activa la circulación del folículo y potencia la absorción de cualquier tratamiento siguiente.</div>
-        <div style="margin-top:.4rem;font-size:12px;color:var(--forest);line-height:1.6"><strong style="color:var(--amazon);font-size:11px;letter-spacing:.08em;text-transform:uppercase">¿Es para mí?</strong><br>Si quieres maximizar los resultados de tu terapia o alisado. También recomendada para cueros cabelludos con exceso de sebo o caída activa.</div>
+        <div style="margin-top:.4rem;font-size:12px;color:var(--forest);line-height:1.6"><strong style="color:var(--amazon);font-size:11px;letter-spacing:.08em;text-transform:uppercase">¿Es para mí?</strong><br>Si quieres sacarle el máximo provecho a tu terapia o alisado. También recomendada para cueros cabelludos con exceso de sebo o caída activa.</div>
         <div class="sc-trust">✓ Amazônica Beleza 🇧🇷 · Sin formol · Diagnóstico gratuito previo</div>
         <a href="https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar" target="_blank" class="wa-btn" style="font-size:10px;padding:8px 14px;margin-top:.75rem"><svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff;flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.522 5.837L0 24l6.335-1.51A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-4.964-1.348l-.356-.212-3.757.896.955-3.654-.232-.374A9.778 9.778 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>Agendar</a>
         <a class="ds-small-link" href="/servicios/ozonoterapia-capilar-maracaibo.html" style="display:block;text-align:center;font-size:11px;color:var(--leaf);margin-top:.5rem;letter-spacing:.05em;text-decoration:none">Ver todos los detalles →</a>
@@ -738,7 +748,11 @@ src="https://www.facebook.com/tr?id=5393646407527824&ev=PageView&noscript=1"
       </div>
     </div>
     </div>
-</section>
+
+      <div style="text-align:center;margin-top:2.5rem">
+    <a href="/servicios/" class="wa-btn" style="background:var(--forest)">Ver todos los servicios →</a>
+  </div>
+    </section>
 
 <!-- PRODUCTOS HOME CARE -->
 <section id="productos">
@@ -855,10 +869,12 @@ src="https://www.facebook.com/tr?id=5393646407527824&ev=PageView&noscript=1"
     </div>
   </div>
 
-  <div style="text-align:center;margin-top:2.5rem">
-    <a href="/servicios/" class="wa-btn" style="background:var(--forest)">Ver todos los servicios →</a>
+  
+
+      <div style="text-align:center;margin-top:2.5rem">
+    <a href="/tienda/" class="wa-btn" style="background:var(--forest)">Ver toda la tienda →</a>
   </div>
-</section>
+    </section>
 
 <!-- FAQ SECTION -->
 <section id="faq" style="background:var(--champagne);padding:5rem 3rem">
@@ -940,9 +956,7 @@ src="https://www.facebook.com/tr?id=5393646407527824&ev=PageView&noscript=1"
     </div>
   </div>
 
-  <div style="text-align:center;margin-top:2.5rem">
-    <a href="/tienda/" class="wa-btn" style="background:var(--forest)">Ver toda la tienda →</a>
-  </div>
+  
 </section>
 <!-- FIN FAQ -->
 <!-- PROMESA -->
@@ -1023,7 +1037,7 @@ src="https://www.facebook.com/tr?id=5393646407527824&ev=PageView&noscript=1"
       <a href="https://wa.me/584146888360?text=Hola%20quiero%20agendar%20diagn%C3%B3stico%20capilar" target="_blank" class="wa-btn" style=""><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.522 5.837L0 24l6.335-1.51A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-4.964-1.348l-.356-.212-3.757.896.955-3.654-.232-.374A9.778 9.778 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>Agendar diagnóstico gratuito</a>
     </div>
     <div>
-      <div class="oc"><div class="oc-title">Amazónica Beleza 🇧🇷</div><div class="oc-text">Biotecnología capilar de la selva amazónica. Nuestros aliados y respaldo técnico internacional. La misma ciencia que usan en São Paulo, ahora disponible en Maracaibo exclusivamente a través de BelaFios.</div><div class="oc-badge">Alianza oficial</div></div>
+      <div class="oc"><div class="oc-title">Amazónica Beleza 🇧🇷</div><div class="oc-text">Biotecnología capilar de la selva amazónica. Nuestros aliados y respaldo técnico internacional. La misma ciencia que usan en São Paulo, ahora la trajimos a Maracaibo, en exclusiva en BelaFios.</div><div class="oc-badge">Alianza oficial</div></div>
       <div class="oc"><div class="oc-title">Liso Brasileiro 🇧🇷</div><div class="oc-text">Alisados de alta gama con fórmulas orgánicas certificadas. Sin formol. Sin daño. Adaptados al cabello marabino — su estructura, su clima, sus necesidades reales frente al calor y la humedad.</div><div class="oc-badge">Línea exclusiva</div></div>
       <div class="oc"><div class="oc-title">Distribución Venezuela — próximamente</div><div class="oc-text">BelaFios será el distribuidor oficial de Amazónica Beleza en Venezuela. No solo un centro de bienestar — una marca con propósito y expansión regional.</div><div class="oc-badge">En construcción</div></div>
     </div>
@@ -1216,7 +1230,7 @@ src="https://www.facebook.com/tr?id=5393646407527824&ev=PageView&noscript=1"
       </div>
       <div class="blog-card-body">
         <div class="blog-card-tag">Botox Capilar · Terapias</div>
-        <div class="blog-card-excerpt">El botox capilar es el tratamiento más malentendido en el mundo de la capilología. No alisa, no daña — y en Maracaibo, es exactamente lo que muchos cabellos necesitan.</div>
+        <div class="blog-card-excerpt">El botox capilar es el tratamiento más malentendido del cuidado capilar. No alisa, no daña — y en Maracaibo, es exactamente lo que muchos cabellos necesitan.</div>
         <div style="font-size:12px;color:var(--leaf);margin-top:1rem;letter-spacing:.05em;font-weight:500">Leer artículo completo →</div>
       </div>
     </a>
@@ -1249,7 +1263,11 @@ src="https://www.facebook.com/tr?id=5393646407527824&ev=PageView&noscript=1"
       </div>
     </div>
     </a>
-</section>
+
+      <div style="text-align:center;margin-top:3rem">
+      <a href="/blog/" class="wa-btn" style="background:var(--forest)">Ver todos los artículos →</a>
+    </div>
+    </section>
 
 <script></script>
 
@@ -1324,9 +1342,7 @@ src="https://www.facebook.com/tr?id=5393646407527824&ev=PageView&noscript=1"
 <section id="ubicacion">
   <div class="sec-hdr">
     <div><div class="sec-tag">Dónde estamos</div>
-    <div style="text-align:center;margin-top:3rem">
-      <a href="/blog/" class="wa-btn" style="background:var(--forest)">Ver todos los artículos →</a>
-    </div><h2>Visítanos en <em>Maracaibo</em></h2></div>
+    <h2>Visítanos en <em>Maracaibo</em></h2></div>
   </div>
   <div class="ubic-grid">
     <div>
