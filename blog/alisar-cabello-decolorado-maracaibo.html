@@ -38,11 +38,11 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '5393646407527824');
+fbq('init', '974061132285115');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=5393646407527824&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=974061132285115&ev=PageView&noscript=1"
  alt="BelaFios Maracaibo"/></noscript>
 <!-- End Meta Pixel Code -->
 
@@ -320,5 +320,11 @@ function toggleFaq(el){var a=el.nextElementSibling;var o=a.classList.contains('o
 </script>
 
 
+<script>
+document.addEventListener('click',function(e){
+  var a=e.target.closest('a[href*="wa.me"],a[href*="api.whatsapp.com"]');
+  if(a&&window.fbq){fbq('track','Contact',{content_name:'whatsapp_click'});}
+},true);
+</script>
 </body>
 </html>
