@@ -75,13 +75,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ZNWHE8ZGH5');document.addEventListener('click',function(e){var wa=e.target.closest('a[href*="wa.me"]');if(wa){gtag('event','whatsapp_click',{event_category:'contacto',event_label:'colorimetria_espera'});}});</script>
 <!-- Meta Pixel -->
 <script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
+!function(f,b){if(f.fbq)return;var n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[]}(window,document);
 fbq('init', '974061132285115');
 fbq('track', 'PageView');
+(function(){var d=false;function l(){if(d)return;d=true;var t=document.createElement('script');t.async=true;t.src='https://connect.facebook.net/en_US/fbevents.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(t,s);}
+['scroll','touchstart','click','keydown','mousemove'].forEach(function(e){window.addEventListener(e,l,{once:true,passive:true})});
+setTimeout(l,3500);})();
 </script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=974061132285115&ev=PageView&noscript=1" alt=""></noscript>
 
@@ -219,19 +218,22 @@ footer .logo-f{font-family:'EB Garamond',serif;font-size:1rem;letter-spacing:.14
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{transition:none!important;animation:none!important}
 }
+.skip-link:focus{top:0}
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link" style="position:absolute;top:-60px;left:0;background:var(--forest);color:#fff;padding:8px 16px;z-index:9999;font-size:14px;transition:top .2s">Saltar al contenido principal</a>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TR4GB4LF"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <div class="wrap">
-  <nav class="nav" aria-label="Navegación">
+  <nav role="navigation" class="nav" aria-label="Navegación">
     <a class="logo" href="https://belafios.com/">Bela<b>Fios</b></a>
     <a class="back" href="https://belafios.com/servicios/">← Servicios</a>
   </nav>
+<main>
 </div>
 
 <header class="hero wrap">
@@ -349,7 +351,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p class="micro">Te escribimos por WhatsApp para reservar tu lugar. Sin compromiso.</p>
 </section>
 
-<footer>
+</main>
+<footer role="contentinfo">
   <div class="wrap">
     <span class="logo-f">BelaFios · Centro de Bienestar Capilar</span>
     C.C. Terraza 77, Piso 2, Local 28 · Maracaibo, Zulia<br>
