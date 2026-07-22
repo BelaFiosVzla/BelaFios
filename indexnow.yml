@@ -1,0 +1,22 @@
+name: Notify Bing via IndexNow
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Send homepage update to Bing
+        run: |
+          curl "https://www.bing.com/indexnow?url=https://belafios.com/&key=11184db148f44c1684ff0593acc84559"
+
+      # Optional: Submit multiple important URLs
+      - name: Send additional URLs to Bing
+        run: |
+          curl "https://www.bing.com/indexnow?url=https://belafios.com/servicios/=11184db148f44c1684ff0593acc84559"
+          curl "https://www.bing.com/indexnow?url=https://belafios.com/blog/keratina-cabello-venezuela.html=11184db148f44c1684ff0593acc84559"
