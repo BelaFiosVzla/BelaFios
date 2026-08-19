@@ -2,10 +2,13 @@
 > Cada línea: URL | título | descripción. Generado automáticamente desde el sitio.
 
 ## Página principal
-- https://belafios.com/ | BelaFios | Centro de Bienestar Capilar en Maracaibo | BelaFios Maracaibo: alisado orgánico, botox capilar y terapias de reposición de aminoácidos y anticaída capilar y con biotecnología Amazônica Beleza. Sin formol. Diagnóstico capilar de obsequio.
+- https://belafios.com/ | BelaFios | Centro de Bienestar Capilar en Maracaibo | BelaFios Maracaibo: alisado orgánico, botox capilar y terapias con biotecnología Amazônica Beleza. Sin formol. Diagnóstico capilar de obsequio.
 
 ## Colorimetría (expectativa)
 - https://belafios.com/colorimetria.html | Colorimetría Consciente Maracaibo | Lista de Espera | BelaFios | Colorimetría Consciente en Maracaibo: color profesional con diagnóstico capilar previo y blindaje Amazônica Beleza. Lista de espera abierta para agosto.
+
+## Distribución para salones (B2B)
+- https://belafios.com/distribucion-salones-venezuela.html | Distribución Amazônica Beleza para Salones | BelaFios | Distribuidor exclusivo de Amazônica Beleza en Venezuela. Lleva alisados y terapias capilares profesionales a tu salón. Envíos a todo el país.
 
 ## Servicios
 - https://belafios.com/servicios/alisado-cacao-maracaibo.html | Alisado de Cacao en Maracaibo | Sin Formol | BelaFios | Alisado de Cacao en Maracaibo sin formol, diseñado para cabello dañado por químicos. Con Cacao y Óleo de Coco. Alisa y repara. 3-6 meses. BelaFios.
@@ -15,14 +18,14 @@
 - https://belafios.com/servicios/alisado-ninas-jolly-kids-maracaibo.html | Alisado para Niñas en Maracaibo | Jolly Kids Vegano sin Formol | Alisado y cuidado capilar para niñas en Maracaibo con Jolly Kids. Línea vegana sin formol ni sulfatos, formulada para cabello infantil. BelaFios.
 - https://belafios.com/servicios/alisado-pollina-cintillo-maracaibo.html | Alisado de Pollina en Maracaibo: adiós al frizz | BelaFios | El retoque que controla el frizz donde más se nota: pollina y contorno del rostro. En cualquier fórmula sin formol, entre sesiones. BelaFios Maracaibo.
 - https://belafios.com/servicios/anticaida-purify-maracaibo.html | Anticaída Capilar Profesional en Maracaibo | BelaFios | Anticaída Capilar Profesional: Capsicum, ozonoterapia y fototerapia láser roja, verde y azul con dispositivos FDA. Diagnóstico capilar de obsequio en Maracaibo.
-- https://belafios.com/servicios/botox-capilar-maracaibo.html | ¿Qué es el Botox Capilar? Baño de Río en Maracaibo | BelaFios | ¿Botox capilar o alisado? No es lo mismo. Elimina el frizz y da brillo sin cambiar tu textura ni usar formol. Baño de Río, 8-12 semanas. Maracaibo.
+- https://belafios.com/servicios/botox-capilar-maracaibo.html | ¿Dónde Hacerse Botox Capilar en Maracaibo? | BelaFios | ¿Botox capilar o alisado? No es lo mismo. Elimina el frizz y da brillo sin cambiar tu textura ni usar formol. Baño de Río, 8-12 semanas. Maracaibo.
 - https://belafios.com/servicios/caida-cabello-hombres-maracaibo.html | Caída de Cabello en Hombres Maracaibo | Diagnóstico | BelaFios | Se te cae el pelo y no sabes por qué. Te lo diagnosticamos con capilógrafo y te damos el protocolo que funciona. Primer diagnóstico de obsequio. Maracaibo.
 - https://belafios.com/servicios/detox-capilar-maracaibo.html | Detox Capilar en Maracaibo | Limpieza Profunda | BelaFios | Detox capilar profesional en Maracaibo. Elimina residuos de minerales, sal y cloro del cuero cabelludo. Con NANOFIX y algas marinas.
 - https://belafios.com/servicios/diagnostico-capilar-gratis-maracaibo.html | Diagnóstico Capilar Gratis en Maracaibo | BelaFios | Diagnóstico capilar gratuito en Maracaibo. Evaluación profesional de tu cabello y cuero cabelludo sin compromiso. Recomendación personalizada. BelaFios.
 - https://belafios.com/servicios/ | Servicios Capilares en Maracaibo | BelaFios | Todos los servicios capilares de BelaFios Maracaibo: alisados orgánicos sin formol, botox capilar, terapias anticaída, detox y más. Diagnóstico gratis.
 - https://belafios.com/servicios/matizacion-platinum-look-maracaibo.html | Matización Platinum Look en Maracaibo | Para Rubias y Canas | Matización Platinum Look en Maracaibo con tecnología PLEX. Neutraliza el amarillo en rubias, mechadas y canas. Repara y da luminosidad. BelaFios.
 - https://belafios.com/servicios/nutricion-hidratacion-capilar-maracaibo.html | Nutrición e Hidratación Capilar en Maracaibo | BelaFios | Terapia de nutrición e hidratación capilar en Maracaibo. Repone lípidos, ceramidas y ácidos grasos. Ideal para el clima de Maracaibo.
-- https://belafios.com/servicios/ozonoterapia-capilar-maracaibo.html | Ozonoterapia Capilar en Maracaibo | Oxigenación | BelaFios | Ozonoterapia capilar en Maracaibo. El ozono medicinal oxigena el cuero cabelludo y potencia cualquier tratamiento. Complemento ideal para terapias. BelaFios.
+- https://belafios.com/servicios/ozonoterapia-capilar-maracaibo.html | Ozonoterapia Capilar en Maracaibo: Sesión y Diagnóstico | Ozonoterapia capilar en Maracaibo. El ozono medicinal oxigena el cuero cabelludo y potencia cualquier tratamiento. Complemento ideal para terapias. BelaFios.
 - https://belafios.com/servicios/paquetes-anticaida-maracaibo.html | Paquetes Anticaída Maracaibo | 4, 8 y 12 Sesiones | BelaFios | Programas anticaída en Maracaibo de 4, 8 y 12 sesiones de Anticaída Capilar Profesional. Mayor paquete, mayor resultado. Transforma el cuero cabelludo a largo plazo. BelaFios.
 - https://belafios.com/servicios/plastica-acai-alisado-maracaibo.html | Plástica de Acaí en Maracaibo | Alisado Orgánico sin Formol | Plástica de Acaí en Maracaibo: alisado orgánico sin formol con Acaí amazónico y Arginina. Funciona en todo tipo de cabello. Hasta 6 meses. BelaFios.
 - https://belafios.com/servicios/reparacion-hair-repair-maracaibo.html | Reparación Capilar en Maracaibo | Hair Repair con NANOFIX | Reparación capilar profesional en Maracaibo para cabello dañado por químicos, calor y sol. Tecnología NANOFIX y queratina activa.

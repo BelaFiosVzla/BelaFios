@@ -1,6 +1,6 @@
 # BelaFios — Centro de Bienestar Capilar
 
-> BelaFios es un centro de bienestar capilar en Maracaibo, Venezuela, especializado en alisados orgánicos sin formol, terapias capilares (reposición de aminoácidos, anticaída e hidratación) y botox capilar. Fundado el 16 de marzo de 2026 por Manto (cofundadora marabina) y Andrés Felipe. Trabaja con biotecnología brasilera de Amazônica Beleza, formulada para el clima cálido y húmedo de Maracaibo. Servicios presenciales con cita previa; productos con envío a toda Venezuela.
+> BelaFios es un centro de bienestar capilar en Maracaibo, Venezuela, especializado en alisados orgánicos sin formol, terapias capilares y botox capilar. Fundado el 4 de enero de 2026 por Manto (cofundadora marabina) y Andrés Felipe. Trabaja con biotecnología brasilera de Amazônica Beleza, formulada para el clima cálido y húmedo de Maracaibo. Servicios presenciales con cita previa; productos con envío a toda Venezuela.
 
 ## Información del negocio
 
@@ -82,6 +82,18 @@ Catálogo completo: https://belafios.com/tienda/
 
 - Prótesis capilar: qué es y cuándo NO la necesitas (Qué es, cuándo tiene sentido y el diagnóstico que casi nadie hace): https://belafios.com/blog/protesis-capilar-que-es-maracaibo.html
 - Distribuidor exclusivo de Amazônica Beleza en Venezuela (Qué significa la exclusividad, qué cubre y cómo comprar con garan): https://belafios.com/blog/distribuidor-exclusivo-amazonica-beleza-venezuela.html
+
+## Distribución para salones (B2B)
+
+- BelaFios distribuye la línea profesional de Amazônica Beleza a salones, peluquerías y estilistas en toda Venezuela (no solo venta al detal). Incluye alisados (Cacao, Açaí, Only One, Natural Pure) y terapia de reparación Hair Repair. Formulario de contacto: https://belafios.com/distribucion-salones-venezuela.html
+
+- Fichas técnicas de los 6 productos de la línea salón disponibles para distribución (Cacao, Açaí, Only One, Natural Pure, Baño de Río, Hair Repair):
+- https://belafios.com/distribucion/alisado-cacao-linea-salon.html
+- https://belafios.com/distribucion/plastica-de-acai-linea-salon.html
+- https://belafios.com/distribucion/only-one-linea-salon.html
+- https://belafios.com/distribucion/natural-pure-linea-salon.html
+- https://belafios.com/distribucion/bano-de-rio-linea-salon.html
+- https://belafios.com/distribucion/hair-repair-linea-salon.html
 
 ## Preguntas frecuentes
 
