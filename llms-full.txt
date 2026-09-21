@@ -1,16 +1,24 @@
 # BelaFios — Mapa completo del sitio para LLMs y agentes
-> Cada línea: URL | título | descripción. Generado automáticamente desde el sitio.
+> BelaFios es el único centro en Venezuela con los productos y la biotecnología capilar de Amazônica Beleza. Maracaibo, Zulia. Agendamiento solo por WhatsApp +58 414-6888360. Resumen del negocio: https://belafios.com/llms.txt
+> Cada línea: URL | título | descripción. Generado desde el <title> y la meta description de cada página.
 
 ## Página principal
 - https://belafios.com/ | BelaFios | Centro de Bienestar Capilar en Maracaibo | BelaFios Maracaibo: alisado orgánico, botox capilar y terapias con biotecnología Amazônica Beleza. Sin formol. Diagnóstico capilar de obsequio.
 
-## Colorimetría (expectativa)
-- https://belafios.com/colorimetria.html | Colorimetría Consciente Maracaibo | Lista de Espera | BelaFios | Colorimetría Consciente en Maracaibo: color profesional con diagnóstico capilar previo y blindaje Amazônica Beleza. Lista de espera abierta para agosto.
+## Colorimetría Consciente — lanzamiento octubre 2026
+- https://belafios.com/colorimetria.html | Colorimetría Consciente Maracaibo | Lista de Espera | BelaFios | Colorimetría Consciente llega en octubre a BelaFios: 20% OFF en todo el tratamiento para la lista de espera, con diagnóstico previo y blindaje Amazônica Beleza.
 
 ## Distribución para salones (B2B)
 - https://belafios.com/distribucion-salones-venezuela.html | Distribución Amazônica Beleza para Salones | BelaFios | Distribuidor exclusivo de Amazônica Beleza en Venezuela. Lleva alisados y terapias capilares profesionales a tu salón. Envíos a todo el país.
+- https://belafios.com/distribucion/alisado-cacao-linea-salon.html | Alisado de Cacao Venezuela — Línea Salón | BelaFios | Sistema alisante de Cacao para pelo maltratado, ondulado, crespo y afro. Ácido acético, hasta 6 meses de duración. Distribución para salones en Venezuela.
+- https://belafios.com/distribucion/bano-de-rio-linea-salon.html | Baño de Río Venezuela — Terapia Anti-Frizz | BelaFios | Baño de Río: terapia que elimina el frizz y relaja la onda sin alisar. Macadamia y chía, 8-12 semanas. Distribución para salones en Venezuela.
+- https://belafios.com/distribucion/hair-repair-linea-salon.html | Hair Repair Venezuela — Reparación 85% | BelaFios | Terapia Hair Repair con tecnología NANOFIX: restaura hasta el 85% de la hebra en la primera aplicación. Distribución para salones en Venezuela.
+- https://belafios.com/distribucion/natural-pure-linea-salon.html | Natural Pure Venezuela — Alisado Orgánico | BelaFios | Natural Pure: alisado hipoalergénico sin formol, apto para embarazadas, lactantes y niñas menores de 12 años. Distribución para salones en Venezuela.
+- https://belafios.com/distribucion/only-one-linea-salon.html | Only One Venezuela — Alisado en Un Solo Paso | BelaFios | Only One: alisado en un solo paso, compatible con cabello tinturado o decolorado. Hasta 6 meses. Distribución para salones en Venezuela.
+- https://belafios.com/distribucion/plastica-de-acai-linea-salon.html | Plástica de Açaí Venezuela — Línea Salón | BelaFios | Sistema alisante Plástica de Açaí para pelo bien tratado. Arginina y açaí, hasta 6 meses de duración, efecto antioxidante. Distribución para salones en Venezuela.
 
 ## Servicios
+- https://belafios.com/servicios/ | Servicios Capilares en Maracaibo | BelaFios | Único centro en Venezuela con la biotecnología de Amazônica Beleza: alisados sin formol, botox capilar y terapias anticaída en Maracaibo. Diagnóstico de cortesía.
 - https://belafios.com/servicios/alisado-cacao-maracaibo.html | Alisado de Cacao en Maracaibo | Sin Formol | BelaFios | Alisado de Cacao en Maracaibo sin formol, diseñado para cabello dañado por químicos. Con Cacao y Óleo de Coco. Alisa y repara. 3-6 meses. BelaFios.
 - https://belafios.com/servicios/alisado-embarazadas-lactantes-maracaibo.html | Alisado para Embarazadas en Maracaibo | Seguro y sin Formol | Alisado para embarazadas y lactantes en Maracaibo. Natural Pure certificado sin formol, sin vapor y sin olor. Seguro para mamá y bebé. BelaFios.
 - https://belafios.com/servicios/alisado-hombre-maracaibo.html | Alisado para Hombre en Maracaibo | Sin Formol | BelaFios | Alisado masculino en Maracaibo con resultado natural. Tiempos reducidos adaptados al cabello de hombre. Sin que se note intervenido. BelaFios.
@@ -21,21 +29,20 @@
 - https://belafios.com/servicios/botox-capilar-maracaibo.html | ¿Dónde Hacerse Botox Capilar en Maracaibo? | BelaFios | ¿Botox capilar o alisado? No es lo mismo. Elimina el frizz y da brillo sin cambiar tu textura ni usar formol. Baño de Río, 8-12 semanas. Maracaibo.
 - https://belafios.com/servicios/caida-cabello-hombres-maracaibo.html | Caída de Cabello en Hombres Maracaibo | Diagnóstico | BelaFios | Se te cae el pelo y no sabes por qué. Te lo diagnosticamos con capilógrafo y te damos el protocolo que funciona. Primer diagnóstico de obsequio. Maracaibo.
 - https://belafios.com/servicios/detox-capilar-maracaibo.html | Detox Capilar en Maracaibo | Limpieza Profunda | BelaFios | Detox capilar profesional en Maracaibo. Elimina residuos de minerales, sal y cloro del cuero cabelludo. Con NANOFIX y algas marinas.
-- https://belafios.com/servicios/diagnostico-capilar-gratis-maracaibo.html | Diagnóstico Capilar Gratis en Maracaibo | BelaFios | Diagnóstico capilar gratuito en Maracaibo. Evaluación profesional de tu cabello y cuero cabelludo sin compromiso. Recomendación personalizada. BelaFios.
-- https://belafios.com/servicios/ | Servicios Capilares en Maracaibo | BelaFios | Todos los servicios capilares de BelaFios Maracaibo: alisados orgánicos sin formol, botox capilar, terapias anticaída, detox y más. Diagnóstico gratis.
+- https://belafios.com/servicios/diagnostico-capilar-gratis-maracaibo.html | Diagnóstico Capilar Gratis en Maracaibo | BelaFios | Diagnóstico capilar de cortesía en Maracaibo. Evaluación profesional de tu cabello y cuero cabelludo sin compromiso. Recomendación personalizada. BelaFios.
 - https://belafios.com/servicios/matizacion-platinum-look-maracaibo.html | Matización Platinum Look en Maracaibo | Para Rubias y Canas | Matización Platinum Look en Maracaibo con tecnología PLEX. Neutraliza el amarillo en rubias, mechadas y canas. Repara y da luminosidad. BelaFios.
 - https://belafios.com/servicios/nutricion-hidratacion-capilar-maracaibo.html | Nutrición e Hidratación Capilar en Maracaibo | BelaFios | Terapia de nutrición e hidratación capilar en Maracaibo. Repone lípidos, ceramidas y ácidos grasos. Ideal para el clima de Maracaibo.
 - https://belafios.com/servicios/ozonoterapia-capilar-maracaibo.html | Ozonoterapia Capilar en Maracaibo: Sesión y Diagnóstico | Ozonoterapia capilar en Maracaibo. El ozono medicinal oxigena el cuero cabelludo y potencia cualquier tratamiento. Complemento ideal para terapias. BelaFios.
-- https://belafios.com/servicios/paquetes-anticaida-maracaibo.html | Paquetes Anticaída Maracaibo | 4, 8 y 12 Sesiones | BelaFios | Programas anticaída en Maracaibo de 4, 8 y 12 sesiones de Anticaída Capilar Profesional. Mayor paquete, mayor resultado. Transforma el cuero cabelludo a largo plazo. BelaFios.
+- https://belafios.com/servicios/paquetes-anticaida-maracaibo.html | Paquetes Anticaída Maracaibo | 4, 8 y 12 Sesiones | BelaFios | Programas anticaída en Maracaibo de 4, 8 y 12 sesiones con Amazônica Beleza. Mayor paquete, mayor resultado. Diagnóstico de cortesía previo. BelaFios.
 - https://belafios.com/servicios/plastica-acai-alisado-maracaibo.html | Plástica de Acaí en Maracaibo | Alisado Orgánico sin Formol | Plástica de Acaí en Maracaibo: alisado orgánico sin formol con Acaí amazónico y Arginina. Funciona en todo tipo de cabello. Hasta 6 meses. BelaFios.
 - https://belafios.com/servicios/reparacion-hair-repair-maracaibo.html | Reparación Capilar en Maracaibo | Hair Repair con NANOFIX | Reparación capilar profesional en Maracaibo para cabello dañado por químicos, calor y sol. Tecnología NANOFIX y queratina activa.
 - https://belafios.com/servicios/reposicion-aminoacidos-maracaibo.html | Reposición de Aminoácidos Maracaibo | Sin Alisar | BelaFios | Reposición de aminoácidos capilar en Maracaibo. Elimina el frizz y devuelve elasticidad sin cambiar tu textura. Ideal para rizos y ondas. BelaFios.
-- https://belafios.com/servicios/terapia-argan-boom-maracaibo.html | Terapia Capilar Argán Boom en Maracaibo | Hidratación y Brillo | Terapia capilar básica con Argán Boom en Maracaibo. Hidratación, brillo y equilibrio en una sesión. Ideal como primera visita. Diagnóstico gratis en BelaFios.
+- https://belafios.com/servicios/terapia-argan-boom-maracaibo.html | Terapia Capilar Argán Boom en Maracaibo | Hidratación y Brillo | Terapia capilar básica con Argán Boom en Maracaibo. Hidratación, brillo y equilibrio en una sesión. Ideal como primera visita. Diagnóstico de cortesía en BelaFios.
 
 ## Tienda
+- https://belafios.com/tienda/ | Tienda Capilar Venezuela | Amazônica Beleza en Casa | BelaFios | Productos capilares Amazônica Beleza en Venezuela: kits anticaída, hidratación, óleos, termoprotector y línea infantil. Envíos a toda Venezuela. BelaFios.
 - https://belafios.com/tienda/blindagem-bb-cream-termoprotector.html | Blindagem BB Cream Termoprotector en Venezuela | BelaFios | Blindagem BB Cream de Amazônica Beleza. Termoprotector en crema con Cacao Blanco, Lino y Macadamia. 250ml. Envíos a toda Venezuela. BelaFios Maracaibo.
 - https://belafios.com/tienda/coconut-oil-hair-repair.html | Coconut Oil Hair Repair en Venezuela | Óleo de Coco | BelaFios | Coconut Oil Hair Repair de Amazônica Beleza. Óleo de coco con Omega 3 y 6. Repara y sella las puntas. 60ml. Envíos a toda Venezuela. BelaFios Maracaibo.
-- https://belafios.com/tienda/ | Tienda Capilar Venezuela | Amazônica Beleza en Casa | BelaFios | Productos capilares Amazônica Beleza en Venezuela: kits anticaída, hidratación, óleos, termoprotector y línea infantil. Envíos a toda Venezuela. BelaFios.
 - https://belafios.com/tienda/jolly-kids-ninas.html | Jolly Kids Línea Capilar Niñas en Venezuela | BelaFios | Jolly Kids de Amazônica Beleza. Línea capilar vegana para niñas y bebés. Sin formol, sin sulfatos. Envíos a toda Venezuela. BelaFios Maracaibo.
 - https://belafios.com/tienda/kit-argan-boom-hidratacion.html | Kit Argan Boom Hidratación en Venezuela | BelaFios | Kit Argan Boom de Amazônica Beleza. Hidratación con óleo de argán y vitamina E. Shampoo, acondicionador y mascarilla. Envíos a toda Venezuela. BelaFios.
 - https://belafios.com/tienda/kit-platinum-look.html | Kit Platinum Look en Venezuela | Matizador PLEX | BelaFios | Kit Platinum Look de Amazônica Beleza. Matiza el amarillo en rubias, mechadas y canas con tecnología PLEX. Envíos a toda Venezuela. BelaFios Maracaibo.
@@ -47,6 +54,7 @@
 - https://belafios.com/tienda/tonico-rosemary-anticaida.html | Tónico Rosemary Anticaída en Venezuela | BelaFios | Tónico Rosemary de Amazônica Beleza con Miel de Romero. Fortalece el folículo y estimula el crecimiento. 150ml. Envíos a toda Venezuela. BelaFios Maracaibo.
 
 ## Blog
+- https://belafios.com/blog/ | Blog Capilar: Guías de Cuidado del Pelo | BelaFios | Guía capilar BelaFios: alisados, terapias, keratina, botox capilar y cuidado del cabello en Maracaibo. Todo lo que necesitas saber, escrito por especialistas.
 - https://belafios.com/blog/aceite-coco-cabello-venezuela.html | Aceite de coco en el pelo: cuándo sí y cuándo no | BelaFios | El producto más popular de Venezuela es también el más mal usado. Cuándo el aceite de coco ayuda a tu pelo, cuándo lo empeora y el protocolo correcto.
 - https://belafios.com/blog/alisado-organico-maracaibo.html | Alisado orgánico en Maracaibo: liso real sin formol | BelaFios | Por qué el alisado orgánico sin formol es la opción más inteligente para el clima de Maracaibo: salud de la hebra, duración real y cero vapores tóxicos.
 - https://belafios.com/blog/alisar-cabello-decolorado-maracaibo.html | Alisar pelo decolorado: la regla de los 15 días | BelaFios | ¿Puedes alisar el cabello decolorado? Sí — con protocolo. La decoloración debe hacerse 15 días antes de cualquier alisado. Guía de BelaFios Maracaibo.
@@ -60,9 +68,8 @@
 - https://belafios.com/blog/como-usar-mascarilla-cabello.html | ¿Cuánto Tiempo Dejar la Mascarilla en el Pelo? | BelaFios | La mayoría la deja 2 minutos y no funciona. Necesita 10 a 20 para hidratar de verdad. Cómo, dónde y cada cuánto aplicar la mascarilla capilar.
 - https://belafios.com/blog/cuanto-dura-el-alisado-mantenimiento-maracaibo.html | ¿Cuánto dura el alisado? Cómo hacer que dure más | BelaFios | Cuánto dura cada alisado, si puedes mojarte el pelo después y los 6 hábitos que te lo acortan sin que lo notes. Guía de mantenimiento desde Maracaibo.
 - https://belafios.com/blog/cuidados-injerto-capilar-hombres-maracaibo.html | Cuidados Después de un Injerto Capilar: Guía | BelaFios | Te hiciste un injerto capilar y nadie te dijo qué viene después. Guía honesta: fases, errores comunes y cómo la ozonoterapia y la luz roja cuidan tu inversión.
-- https://belafios.com/blog/distribuidor-exclusivo-amazonica-beleza-venezuela.html | Distribuidor Exclusivo Amazônica Beleza en Venezuela | BelaFios | BelaFios es el único distribuidor autorizado de Amazônica Beleza en Venezuela. Qué significa la exclusividad, qué productos cubre y cómo comprar con garantía. Maracaibo.
+- https://belafios.com/blog/distribuidor-exclusivo-amazonica-beleza-venezuela.html | Distribuidor Exclusivo Amazônica Beleza en Venezuela | BelaFios | BelaFios es el único distribuidor autorizado de Amazônica Beleza en Venezuela. Qué cubre la exclusividad y cómo comprar con garantía. Maracaibo.
 - https://belafios.com/blog/hidratar-cabello-crespo-maracaibo.html | Cómo hidratar el cabello crespo en Maracaibo | BelaFios | Guía completa para hidratar el cabello crespo en el clima de Maracaibo, con sus condiciones de humedad y calor particulares.
-- https://belafios.com/blog/ | Blog Capilar: Guías de Cuidado del Pelo | BelaFios | Guía capilar BelaFios: alisados, terapias, keratina, botox capilar y cuidado del cabello en Maracaibo. Todo lo que necesitas saber, escrito por especialistas.
 - https://belafios.com/blog/keratina-cabello-venezuela.html | Keratina Venezolana: Cuáles Son Buenas (y Cuáles No) | BelaFios | Guía honesta: qué keratinas venezolanas sí funcionan, cuáles llevan formol y cómo saber cuál te conviene antes de aplicártela. Sin humo.
 - https://belafios.com/blog/oleo-argan-cabello-venezuela.html | Aceite de argán para el pelo: escudo contra el sol | BelaFios | El óleo de argán repone los lípidos que el sol y el clima le roban a tu pelo. Beneficios reales, cómo usarlo y por qué es el escudo UV que Maracaibo exige.
 - https://belafios.com/blog/ozonoterapia-capilar-beneficios-maracaibo.html | ¿Qué Es la Ozonoterapia Capilar y Para Qué Sirve? | BelaFios | Ozono medicinal sobre el cuero cabelludo: oxigena, activa la circulación y frena la caída. Qué es, cómo funciona y cuándo aplicarla en Maracaibo.
@@ -73,3 +80,7 @@
 - https://belafios.com/blog/terapia-anticaida-cabello-maracaibo.html | Terapia anticaída: cómo frenar la caída del pelo | BelaFios | La caída de cabello en Venezuela tiene causas específicas. Una terapia anticaída profesional con Mirra y Rosas ataca el problema desde el folículo.
 - https://belafios.com/blog/terapias-capilares-maracaibo.html | Terapias capilares: cuál necesita tu pelo | BelaFios | El cabello venezolano necesita más que shampoo. Las terapias capilares profesionales atacan lo que el cuidado en casa no puede resolver.
 - https://belafios.com/blog/termoprotector-capilar-maracaibo.html | Termoprotector Capilar en Maracaibo: por qué lo necesitas | El calor de la plancha combinado con el clima de Maracaibo daña el cabello silenciosamente. El termoprotector es indispensable.
+
+---
+Páginas indexadas: 67
+Última actualización: 2026-09-21
