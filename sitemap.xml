@@ -20,9 +20,21 @@
 
   <url>
     <loc>https://belafios.com/tienda/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://belafios.com/bienestar-intimo/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://belafios.com/dotacion-industrial/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <url>
@@ -283,6 +295,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
+  <url>
+    <loc>https://belafios.com/blog/caida-cabello-peptidos-bajar-de-peso-maracaibo.html</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <url>
     <loc>https://belafios.com/blog/botox-capilar-maracaibo-banho-de-rio.html</loc>
@@ -307,7 +325,7 @@
 
   <url>
     <loc>https://belafios.com/blog/caida-cabello-mujeres-40-maracaibo.html</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
