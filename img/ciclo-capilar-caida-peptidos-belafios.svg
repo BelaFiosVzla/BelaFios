@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" role="img" aria-labelledby="ciclo-t ciclo-d">
+<title id="ciclo-t">Qué le pasa al folículo cuando bajas de peso rápido</title>
+<desc id="ciclo-d">El folículo pasa de fase de crecimiento a fase de reposo anticipada por el estrés metabólico, y el pelo se desprende dos o tres meses después.</desc>
+<rect width="900" height="340" fill="#2D4A2A"/>
+<text x="450" y="46" text-anchor="middle" fill="#C8A96E" font-family="Jost,system-ui,sans-serif" font-size="15" letter-spacing="3">EL CICLO QUE EXPLICA TU CAÍDA</text>
+
+<!-- FASE 1 -->
+<g transform="translate(120,175)">
+  <circle r="54" fill="none" stroke="#F0E8D8" stroke-width="1.1" opacity=".45"/>
+  <path d="M0 34 L0 -30" stroke="#F0E8D8" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M0 -30 q7 -13 2 -22" stroke="#F0E8D8" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <circle cy="34" r="8.5" fill="none" stroke="#C8A96E" stroke-width="2"/>
+  <circle cy="34" r="3" fill="#C8A96E"/>
+  <text y="86" text-anchor="middle" fill="#F0E8D8" font-family="Jost,system-ui,sans-serif" font-size="16" font-weight="500">Crecimiento</text>
+  <text y="108" text-anchor="middle" fill="#F0E8D8" opacity=".62" font-family="Jost,system-ui,sans-serif" font-size="13">85% de tu cabello</text>
+</g>
+
+<path d="M200 175 L272 175" stroke="#C8A96E" stroke-width="1.3" stroke-linecap="round"/>
+<path d="M264 169 L272 175 L264 181" stroke="#C8A96E" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="236" y="160" text-anchor="middle" fill="#C8A96E" font-family="Jost,system-ui,sans-serif" font-size="11.5" letter-spacing="1.4">BAJAS DE PESO</text>
+<text x="236" y="203" text-anchor="middle" fill="#C8A96E" opacity=".75" font-family="Jost,system-ui,sans-serif" font-size="11.5" letter-spacing="1.4">RÁPIDO</text>
+
+<!-- FASE 2 -->
+<g transform="translate(450,175)">
+  <circle r="54" fill="none" stroke="#C8A96E" stroke-width="1.4"/>
+  <path d="M0 34 L0 -8" stroke="#F0E8D8" stroke-width="2.2" stroke-linecap="round" opacity=".55"/>
+  <path d="M0 -8 l0 -6" stroke="#F0E8D8" stroke-width="2.2" stroke-linecap="round" opacity=".25"/>
+  <circle cy="34" r="8.5" fill="none" stroke="#C8A96E" stroke-width="2" stroke-dasharray="3 3"/>
+  <text y="86" text-anchor="middle" fill="#F0E8D8" font-family="Jost,system-ui,sans-serif" font-size="16" font-weight="500">Reposo anticipado</text>
+  <text y="108" text-anchor="middle" fill="#F0E8D8" opacity=".62" font-family="Jost,system-ui,sans-serif" font-size="13">el folículo se pausa, no muere</text>
+</g>
+
+<path d="M530 175 L602 175" stroke="#C8A96E" stroke-width="1.3" stroke-linecap="round"/>
+<path d="M594 169 L602 175 L594 181" stroke="#C8A96E" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="566" y="160" text-anchor="middle" fill="#C8A96E" font-family="Jost,system-ui,sans-serif" font-size="11.5" letter-spacing="1.4">2 A 3 MESES</text>
+<text x="566" y="203" text-anchor="middle" fill="#C8A96E" opacity=".75" font-family="Jost,system-ui,sans-serif" font-size="11.5" letter-spacing="1.4">DESPUÉS</text>
+
+<!-- FASE 3 -->
+<g transform="translate(780,175)">
+  <circle r="54" fill="none" stroke="#F0E8D8" stroke-width="1.1" opacity=".45"/>
+  <path d="M-16 -18 q10 16 4 30" stroke="#F0E8D8" stroke-width="2.2" fill="none" stroke-linecap="round" opacity=".5"/>
+  <circle cy="34" r="8.5" fill="none" stroke="#C8A96E" stroke-width="2"/>
+  <path d="M-7 34 a7 7 0 0 1 14 0" fill="none" stroke="#C8A96E" stroke-width="2" stroke-linecap="round"/>
+  <text y="86" text-anchor="middle" fill="#F0E8D8" font-family="Jost,system-ui,sans-serif" font-size="16" font-weight="500">Caída visible</text>
+  <text y="108" text-anchor="middle" fill="#F0E8D8" opacity=".62" font-family="Jost,system-ui,sans-serif" font-size="13">cepillo, almohada, ducha</text>
+</g>
+
+<text x="450" y="315" text-anchor="middle" fill="#F0E8D8" opacity=".55" font-family="Cormorant Garamond,Georgia,serif" font-style="italic" font-size="17">El folículo está dormido, no perdido — por eso se puede reactivar.</text>
+</svg>

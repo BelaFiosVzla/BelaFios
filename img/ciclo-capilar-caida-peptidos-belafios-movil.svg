@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 800" role="img" aria-labelledby="cm-t cm-d">
+<title id="cm-t">Qué le pasa al folículo cuando bajas de peso rápido</title>
+<desc id="cm-d">El folículo pasa de fase de crecimiento a reposo anticipado por el estrés metabólico, y el pelo se desprende dos o tres meses después.</desc>
+<rect width="420" height="800" fill="#2D4A2A"/>
+<text x="210" y="46" text-anchor="middle" fill="#C8A96E" font-family="Jost,system-ui,sans-serif" font-size="15" letter-spacing="2.2">EL CICLO QUE EXPLICA TU CAÍDA</text>
+
+<g transform="translate(210,140)">
+  <circle r="52" fill="none" stroke="#F0E8D8" stroke-width="1.2" opacity=".45"/>
+  <path d="M0 32 L0 -30" stroke="#F0E8D8" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M0 -30 q8 -13 2 -22" stroke="#F0E8D8" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <circle cy="32" r="9" fill="none" stroke="#C8A96E" stroke-width="2.2"/>
+  <circle cy="32" r="3.2" fill="#C8A96E"/>
+  <text y="86" text-anchor="middle" fill="#F0E8D8" font-family="Jost,system-ui,sans-serif" font-size="22" font-weight="500">Crecimiento</text>
+  <text y="112" text-anchor="middle" fill="#F0E8D8" opacity=".65" font-family="Jost,system-ui,sans-serif" font-size="17">85% de tu cabello</text>
+</g>
+
+<text x="210" y="290" text-anchor="middle" fill="#C8A96E" font-family="Jost,system-ui,sans-serif" font-size="14" letter-spacing="1.6">BAJAS DE PESO RÁPIDO</text>
+<path d="M210 302 L210 336" stroke="#C8A96E" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M204 328 L210 336 L216 328" stroke="#C8A96E" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+<g transform="translate(210,400)">
+  <circle r="52" fill="none" stroke="#C8A96E" stroke-width="1.6"/>
+  <path d="M0 32 L0 -8" stroke="#F0E8D8" stroke-width="2.6" stroke-linecap="round" opacity=".55"/>
+  <path d="M0 -8 l0 -7" stroke="#F0E8D8" stroke-width="2.6" stroke-linecap="round" opacity=".25"/>
+  <circle cy="32" r="9" fill="none" stroke="#C8A96E" stroke-width="2.2" stroke-dasharray="3.4 3.4"/>
+  <text y="86" text-anchor="middle" fill="#F0E8D8" font-family="Jost,system-ui,sans-serif" font-size="22" font-weight="500">Reposo anticipado</text>
+  <text y="112" text-anchor="middle" fill="#F0E8D8" opacity=".65" font-family="Jost,system-ui,sans-serif" font-size="17">el folículo se pausa, no muere</text>
+</g>
+
+<text x="210" y="550" text-anchor="middle" fill="#C8A96E" font-family="Jost,system-ui,sans-serif" font-size="14" letter-spacing="1.6">2 A 3 MESES DESPUÉS</text>
+<path d="M210 562 L210 596" stroke="#C8A96E" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M204 588 L210 596 L216 588" stroke="#C8A96E" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+<g transform="translate(210,650)">
+  <circle r="52" fill="none" stroke="#F0E8D8" stroke-width="1.2" opacity=".45"/>
+  <path d="M-16 -22 q10 16 4 30" stroke="#F0E8D8" stroke-width="2.4" fill="none" stroke-linecap="round" opacity=".5"/>
+  <circle cy="32" r="9" fill="none" stroke="#C8A96E" stroke-width="2.2"/>
+  <path d="M-7.5 32 a7.5 7.5 0 0 1 15 0" fill="none" stroke="#C8A96E" stroke-width="2.2" stroke-linecap="round"/>
+  <text y="86" text-anchor="middle" fill="#F0E8D8" font-family="Jost,system-ui,sans-serif" font-size="22" font-weight="500">Caída visible</text>
+  <text y="112" text-anchor="middle" fill="#F0E8D8" opacity=".65" font-family="Jost,system-ui,sans-serif" font-size="17">cepillo, almohada, ducha</text>
+</g>
+</svg>
