@@ -100,6 +100,25 @@ test('isWhatsappLink reconoce wa.me y api.whatsapp.com y nada más', () => {
   assert.equal(T.isWhatsappLink(null), false);
 });
 
+// ---------- B1. los botones de «compartir» no son contactos ----------
+test('isWhatsappLink ignora los enlaces de compartir, que no llevan número', () => {
+  // wa.me sin número abre el selector de contactos: es compartir, no escribirnos
+  assert.equal(T.isWhatsappLink('https://wa.me/?text=Keratina%20%7C%20BelaFios'), false);
+  assert.equal(T.isWhatsappLink('https://wa.me/'), false);
+  assert.equal(T.isWhatsappLink('https://api.whatsapp.com/send?text=hola'), false);
+  // y sigue reconociendo los que sí nos escriben
+  assert.equal(T.isWhatsappLink('https://wa.me/584146888360'), true);
+  assert.equal(T.isWhatsappLink('https://api.whatsapp.com/send?phone=584146888360&text=hola'), true);
+});
+
+test('handleClick no dispara whatsapp_click en un botón de compartir', () => {
+  const enviados = [];
+  const gtag = (...a) => enviados.push(a);
+  const compartir = fakeEl({ href: 'https://wa.me/?text=Keratina%20%7C%20BelaFios' });
+  assert.equal(T.handleClick(gtag, compartir, '/blog/keratina-cabello-venezuela.html'), false);
+  assert.equal(enviados.length, 0);
+});
+
 // ---------- B1. whatsappParams ----------
 test('whatsappParams arma intencion, cta_ubicacion y section desde el enlace', () => {
   const el = fakeEl({ data: { intencion: 'diagnostico', ubicacion: 'cierre', section: 'blog_top' } });

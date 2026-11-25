@@ -14,7 +14,9 @@
 
   var INTENCIONES = ['diagnostico', 'tienda', 'distribucion', 'dotacion', 'bienestar_intimo'];
   var ALLOWED_PARAMS = ['intencion', 'cta_ubicacion', 'section', 'lead_source', 'page_path'];
-  var WHATSAPP_RE = /^https?:\/\/(wa\.me|api\.whatsapp\.com)\//i;
+  // Solo cuentan los enlaces que nos escriben a nosotros: llevan número.
+  // Los de «compartir» (wa.me/?text=…) abren el selector de contactos y no son un contacto.
+  var WHATSAPP_RE = /^https?:\/\/(wa\.me\/\d|api\.whatsapp\.com\/send\?[^#]*\bphone=\d)/i;
   var EMAIL_RE = /@/;
   var PHONE_RE = /\d[\d\s().+-]{6,}\d/;
 
